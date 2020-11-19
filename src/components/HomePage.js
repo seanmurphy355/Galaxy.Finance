@@ -30,7 +30,7 @@ export default function HomePage() {
                             </div>
                             <div class ="cg" >
                                 <div class="info">
-                                    <p>idk yet some mission statement or something</p>
+                                    <p>Gaxaly.Finance aims to become a top competitor in the DEFI scene. Start now with our fair launch staking!</p>
                                 </div>
                             </div>
                         </div>

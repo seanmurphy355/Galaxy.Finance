@@ -163,7 +163,7 @@ class ProjectPage extends Component {
                   </div>
                   <div class="cg-Three" >
                     <div class="info-Three">
-        
+                    <p> Currently an extra card that might be used in later development</p>
                     </div>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ class ProjectPage extends Component {
                   </div>
                   <div class="cg-Four" >
                     <div class="info-Four">
-                      <p> Currently The APY is not set up</p>
+                      <p> Currently The APY is not stable</p>
                     </div>
                   </div>
                 </div>
