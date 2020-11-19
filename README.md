@@ -12,7 +12,7 @@ Staking applictions: requires validators to distribute the goverance token. DEFI
 7. MetaMask: https://metamask.io/download.html
 
 
-## Commands list: 
+## Commands List: 
 - https://nodejs.org/en/ install node version below 13 I am using 12.19
 - `npm install -g truffle`
 - `npm install @material-ui/core`
@@ -21,14 +21,14 @@ Staking applictions: requires validators to distribute the goverance token. DEFI
 
 
 
-## Truffle commands:
+## Truffle Commands:
 - `truffle compile`
 - `truffle deploy`
 - `truffle migrate`
 - `truffle migrate --rest`
 - `truffle test`
 
-## Start application:
+## Start Application:
 - `npm start`
 
 
@@ -36,10 +36,11 @@ Staking applictions: requires validators to distribute the goverance token. DEFI
 - `truffle exec script/go.js`
 
 
-note you must rename the contracts file in the build/contracts to abi and move it to the Components file located in the src file when updating any contract data.
+### (Note:)
+- you must rename the contracts file in the build/contracts to abi and move it to the Components file located in the src file when updating any contract data.
 The reason for this is that our files need this jason data... if the contracts were actually deployed this would not be the case but since I will not be deploying them you must take this step to see updates
 
-## Processes of reward distribution:
+## Processes of Reward Distribution:
 - Migrate conntracts to blockchain
 - Rename contracts in build/contracts to abi and move the abi file to src/components. (you should now have 100000 nusdc in the wallet when you refresh the page) (make sure to refresh the page after each step)
 - Stake user funds or unstake user funds and move the abi file back to builds and rename the file to contracts (careful because the normal contracts file holds all sol files do not save over this).
@@ -49,5 +50,5 @@ if you have staked funds rewards should be distrubited if you do not there shoul
 
 Any questions please watch the video for this part.(Can be found on the hosted website demo video page).
 
-## Other usage notes:
+## Other Usage Notes:
 - When using the index 0 and 1 accounts that ganache provides remember everytime you open ganache up these accounts change you must create new metamask accounts and update the abi file
