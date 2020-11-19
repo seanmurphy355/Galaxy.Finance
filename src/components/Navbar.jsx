@@ -58,7 +58,7 @@ class Navbar extends React.Component {
                   startIcon={<YouTubeIcon />}
                   style={{ margin:"0" }}
                   target="_blank"
-                  href="https://media.oregonstate.edu/edit/1_j9w4f8kc"
+                  href="https://www.youtube.com/watch?v=rNNK5w-9Oe4"
                 >
                   Demo
                 </Button>
