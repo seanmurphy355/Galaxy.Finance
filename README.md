@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+#Purpose: 
+We can create a non-traditional asset that is immutable meaning in theory it cannot be manipluated unless there is corrupt code.
+Staking applictions: requires validators to distribute the goverance token. DEFI = Decentralized finance (this is somewhat new idea)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Required:
+1. Solidity
+2. Ganache: https://www.trufflesuite.com/ganache
+3. Node.js V 12.19 works best with ganache if V is below 13  command:
+4. React.js
+5. Truffle frame work. command: npm install -g truffle(should work if not I am using version 5.1.39 command: npm install --g truffle@5.1.39) https://www.trufflesuite.com/docs/truffle/getting-started/installation
+6. Make sure to install bootstrap and Material UI.
+7. MetaMask: https://metamask.io/download.html
 
-## Available Scripts
 
-In the project directory, you can run:
+##Commands list: 
+- https://nodejs.org/en/ install node version below 13 I am using 12.19
+- `npm install -g truffle`
+- `npm install @material-ui/core`
+- `npm install @material-ui/icons`
+- `npm install bootstrap@3`
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##Truffle commands:
+- `truffle compile`
+- `truffle deploy`
+- `truffle migrate`
+- `truffle migrate --rest`
+- `truffle test`
 
-### `npm test`
+##Start application:
+- `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+##Rewards script: (use a new powershell after starting application)
+- `truffle exec script/go.js`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+note you must rename the contracts file in the build/contracts to abi and move it to the Components file located in the src file when updating any contract data.
+The reason for this is that our files need this jason data... if the contracts were actually deployed this would not be the case but since I will not be deploying them you must take this step to see updates
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##Processes of reward distribution:
+1.Migrate conntracts to blockchain
+2.Rename contracts in build/contracts to abi and move the abi file to src/components. (you should now have 100000 nusdc in the wallet when you refresh the page) (make sure to refresh the page after each step)
+3.Stake user funds or unstake user funds and move the abi file back to builds and rename the file to contracts (careful because the normal contracts file holds all sol files do not save over this).
+4.Run the rewards script with the new build/contracts file updated
+5.Change the build/contracts file back to abi and move it to src/components.
+if you have staked funds rewards should be distrubited if you do not there should be no change. Again this all could be automated if the contracts were deployed to the mainnet.
 
-### `npm run eject`
+Any questions please watch the video for this part.(Can be found on the hosted website demo video page).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Other usage notes:
+1. When using the index 0 and 1 accounts that ganache provides remember everytime you open ganache up these accounts change you must create new metamask accounts and update the abi file
