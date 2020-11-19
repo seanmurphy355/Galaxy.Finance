@@ -40,14 +40,14 @@ note you must rename the contracts file in the build/contracts to abi and move i
 The reason for this is that our files need this jason data... if the contracts were actually deployed this would not be the case but since I will not be deploying them you must take this step to see updates
 
 ## Processes of reward distribution:
-1.Migrate conntracts to blockchain
-2.Rename contracts in build/contracts to abi and move the abi file to src/components. (you should now have 100000 nusdc in the wallet when you refresh the page) (make sure to refresh the page after each step)
-3.Stake user funds or unstake user funds and move the abi file back to builds and rename the file to contracts (careful because the normal contracts file holds all sol files do not save over this).
-4.Run the rewards script with the new build/contracts file updated
-5.Change the build/contracts file back to abi and move it to src/components.
+- Migrate conntracts to blockchain
+- Rename contracts in build/contracts to abi and move the abi file to src/components. (you should now have 100000 nusdc in the wallet when you refresh the page) (make sure to refresh the page after each step)
+- Stake user funds or unstake user funds and move the abi file back to builds and rename the file to contracts (careful because the normal contracts file holds all sol files do not save over this).
+- Run the rewards script with the new build/contracts file updated
+- Change the build/contracts file back to abi and move it to src/components.
 if you have staked funds rewards should be distrubited if you do not there should be no change. Again this all could be automated if the contracts were deployed to the mainnet.
 
 Any questions please watch the video for this part.(Can be found on the hosted website demo video page).
 
 ## Other usage notes:
-1. When using the index 0 and 1 accounts that ganache provides remember everytime you open ganache up these accounts change you must create new metamask accounts and update the abi file
+- When using the index 0 and 1 accounts that ganache provides remember everytime you open ganache up these accounts change you must create new metamask accounts and update the abi file
