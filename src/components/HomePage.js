@@ -26,7 +26,7 @@ export default function HomePage() {
                                 <img src={skull}/>
                             </div>
                             <div class ="cl" >
-                                <h1>The Mission</h1>
+                            <p2>The Mission</p2>
                             </div>
                             <div class ="cg" >
                                 <div class="info">
@@ -40,7 +40,7 @@ export default function HomePage() {
                                 <img src={ghost}/>
                             </div>
                             <div class ="cl" >
-                            <h1>Galaxy Finance</h1>
+                            <p2 >Galaxy Finance</p2>
                             </div>
                             <div class ="cg" >
                                 <div class="info">
@@ -52,7 +52,7 @@ export default function HomePage() {
                         { 
                         <div class = "pannel">
                             <div class ="cd" > <img src={bat}/></div>
-                            <div class ="cl" ><h1>Socials</h1></div>
+                            <div class ="cl" ><p2>Socials</p2></div>
                             <div class ="cg" >
                             <button class="button"><FontAwesomeIcon icon={faMedium} class ="social" size="2x"/></button>
                             <div class="divider"/>

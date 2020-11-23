@@ -15,7 +15,7 @@ body {
   margin: 0;
   height: 100%;
   padding: 0;
-  font-size: 12px;
+  font-size: medium;
   color: #000000;
   background-color: #212121;
   color: rgba(255, 255, 255, 0.75);
@@ -32,7 +32,7 @@ body {
 
 
 .content{
-  margin-top: 300px;
+  margin-top: 23vh;
   margin-left: 10%;
   width: 80%;
   height: 50%;
@@ -44,8 +44,8 @@ body {
 
 .pannel{
   margin:10px;
-  width: 28%;
-  height:90%;
+  width: 30%;
+  height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,18 +74,18 @@ body {
 .pannel .cl{
   width: 100%;
   height: 10%;
- background: #383e41;
+  background: #383e41;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 4vh;
 }
 
 .pannel .cg{
   width: 100%;
   height: 30%;
   background: #383e41;
-  font-size: 16px;
+  font-size: 1.6vh;
   
 
 }
@@ -159,3 +159,4 @@ body {
   display:inline-block;
   
 }
+
