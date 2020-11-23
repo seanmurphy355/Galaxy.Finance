@@ -1,5 +1,6 @@
 import { LabelRounded } from '@material-ui/icons'
 import React, { Component } from 'react'
+import './ui.css';
 import skull from "./img/icons/1.PNG";
 
 
@@ -46,11 +47,11 @@ class StakerUI extends Component {
                                     required />
                            
                             </div>
-                            <button type="submit" className="btn btn-primary btn-block btn-lg">Stake Tokens</button>
+                            <button type="submit" className="btn btn-primary btn-block btn-lg .btn-responsive">Stake Tokens</button>
                         </form>
                         <button
                             type="submit"
-                            className="btn btn-primary btn-block btn-lg"
+                            className="btn btn-primary btn-block btn-lg .btn-responsive"
                             onClick={(event) => {
                                 event.preventDefault()
                                 this.props._StopStake()
