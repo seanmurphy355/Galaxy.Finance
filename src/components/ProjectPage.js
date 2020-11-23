@@ -134,7 +134,7 @@ class ProjectPage extends Component {
                   <img src={skull} />
                 </div>
                 <div class="cl-Two" >
-                  <h1>Stake and Withdraw</h1>
+                  <p2>Stake and Withdraw</p2>
                 </div>
                 <div class="cg-Two" >
                   <div class="info-Two">
@@ -159,11 +159,11 @@ class ProjectPage extends Component {
                     <img src={ghost} />
                   </div>
                   <div class="cl-Three" >
-                    <h1>TBD</h1>
+                    <p2>TBD</p2>
                   </div>
                   <div class="cg-Three" >
                     <div class="info-Three">
-                    <p> Currently an extra card that might be used in later development</p>
+                    <p1 class ="js"> </p1>
                     </div>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ class ProjectPage extends Component {
                     <img src={sky} />
                   </div>
                   <div class="cl-Four" >
-                    <h1>Staking Info</h1>
+                    <p2>Staking Info</p2>
                   </div>
                   <div class="cg-Four" >
                     <div class="info-Four">
